@@ -53,7 +53,7 @@ def main():
                 post = submission_processor.process_submission(post)
                 if post is None:
                     continue
-                    
+
                 _logger.info(f'Processed post {post_id}')
                 _logger.info(f'Saving post: {post_id} to the database')
                 try:
