@@ -2,7 +2,7 @@ import logging
 
 from fastapi import APIRouter
 
-from reddit_scraper.posts.posts_service import post_service
+from reddit_scraper.posts.post_service import post_service
 
 posts_router = APIRouter(prefix='/posts')
 _logger = logging.getLogger(__name__)

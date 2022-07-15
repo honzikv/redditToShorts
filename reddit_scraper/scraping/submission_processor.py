@@ -7,7 +7,7 @@ import praw.models
 
 from reddit_scraper.database.models.comment import Comment
 from reddit_scraper.database.models.post import Post
-from reddit_scraper.posts.posts_repository import PostRepository
+from reddit_scraper.posts.post_repository import PostRepository
 
 MAX_COMMENTS_PER_SUBMISSION = 250
 logger = logging.getLogger(__name__)

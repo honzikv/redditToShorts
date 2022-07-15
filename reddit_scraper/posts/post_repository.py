@@ -1,4 +1,7 @@
+import dataclasses
+
 from reddit_scraper.database.database import get_database
+from reddit_scraper.database.models.post import Post
 
 
 class PostRepository:
@@ -6,6 +9,14 @@ class PostRepository:
     @property
     def _posts(self):
         return get_database().posts
+
+    def insert_post(self, post: Post):
+        """
+        Inserts a post
+        :param post:
+        :return:
+        """
+        self._posts.insert_one(dataclasses.asdict(post))
 
     def find_post_by_id(self, post_id: str):
         """

@@ -1,4 +1,4 @@
-from reddit_scraper.posts.posts_repository import post_repository, PostRepository
+from reddit_scraper.posts.post_repository import post_repository, PostRepository
 
 MAX_POSTS_PER_REQUEST = 10
 
